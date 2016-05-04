@@ -26,3 +26,13 @@ C:\Users\a551ln\Documents\Visual Studio 2015\Projects\CryptStore\CryptStore\obj\
 C:\Users\a551ln\Documents\Visual Studio 2015\Projects\CryptStore\CryptStore\bin\Release\AES256 Password Manager.exe.config
 C:\Users\a551ln\Documents\Visual Studio 2015\Projects\CryptStore\CryptStore\bin\Release\AES256 Password Manager.exe
 C:\Users\a551ln\Documents\Visual Studio 2015\Projects\CryptStore\CryptStore\obj\Release\AES256 Password Manager.exe
+C:\Users\Cttynul\Documents\GitHub\aes256-password-manager\CryptStore\bin\Release\AES256 Password Manager.exe.config
+C:\Users\Cttynul\Documents\GitHub\aes256-password-manager\CryptStore\bin\Release\AES256 Password Manager.exe
+C:\Users\Cttynul\Documents\GitHub\aes256-password-manager\CryptStore\obj\Release\CryptStore.vbprojResolveAssemblyReference.cache
+C:\Users\Cttynul\Documents\GitHub\aes256-password-manager\CryptStore\obj\Release\PassCrypt.Form1.resources
+C:\Users\Cttynul\Documents\GitHub\aes256-password-manager\CryptStore\obj\Release\PassCrypt.Form2.resources
+C:\Users\Cttynul\Documents\GitHub\aes256-password-manager\CryptStore\obj\Release\PassCrypt.About.resources
+C:\Users\Cttynul\Documents\GitHub\aes256-password-manager\CryptStore\obj\Release\PassCrypt.Licenza.resources
+C:\Users\Cttynul\Documents\GitHub\aes256-password-manager\CryptStore\obj\Release\PassCrypt.Resources.resources
+C:\Users\Cttynul\Documents\GitHub\aes256-password-manager\CryptStore\obj\Release\CryptStore.vbproj.GenerateResource.Cache
+C:\Users\Cttynul\Documents\GitHub\aes256-password-manager\CryptStore\obj\Release\AES256 Password Manager.exe

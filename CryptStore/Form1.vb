@@ -153,6 +153,8 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If File.Exists("DB.crypt") = False Then
+            NewToolStripMenuItem.Enabled = True
+            OpenToolStripMenuItem.Enabled = False
             RichTextBox1.Text = "Sembra sia la prima volta che accedi, in caso contrario il programma non riesce a recuperare il tuo database. Per crearne uno nuovo clicca sull'icona in alto a sinistra che ti porterà nella pagina di gestione e creazione del database."
         End If
     End Sub
@@ -164,5 +166,29 @@ Public Class Form1
 
     Private Sub ToolStripButton1_Click(sender As Object, e As EventArgs) Handles ToolStripButton1.Click
         About.Show()
+    End Sub
+
+    Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
+        Form2.Show()
+    End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+        Form2.Show()
+    End Sub
+
+    Private Sub ExitToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ExitToolStripMenuItem.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub CopyToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CopyToolStripMenuItem.Click
+        istart = InStr(RichTextBox1.Text, CercaTesto.Text, CompareMethod.Text)
+        If istart = 0 Then
+            MsgBox("Nessuna corrispondenza! Inserisci il testo da cercare all'interno della search bar presente nel menu principale.")
+            Exit Sub
+        End If
+        ilen = CercaTesto.TextLength
+        RichTextBox1.Focus()
+        RichTextBox1.SelectionStart = istart - 1
+        RichTextBox1.SelectionLength = ilen
     End Sub
 End Class
