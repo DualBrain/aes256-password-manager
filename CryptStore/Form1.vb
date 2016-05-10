@@ -24,6 +24,7 @@ Public Class Form1
                 Precedente.Enabled = True
                 Successivo.Enabled = True
                 BloccaProfilo.Enabled = True
+                HelpToolStripMenuItem.Enabled = True
                 TextBox1.Text = "Inserisci password"
 
                 Label1.Visible = False
@@ -68,6 +69,7 @@ Public Class Form1
         Successivo.Enabled = False
         CercaTesto.ReadOnly = True
         BloccaProfilo.Enabled = False
+        HelpToolStripMenuItem.Enabled = False
         Button1.Enabled = True
 
         Label1.Visible = True
@@ -141,6 +143,7 @@ Public Class Form1
         Label1.Visible = True
         TextBox1.Visible = True
         Button1.Visible = True
+        HelpToolStripMenuItem.Enabled = False
     End Sub
 
     Private Sub Aggiungi_Click(sender As Object, e As EventArgs) Handles Aggiungi.Click
@@ -190,5 +193,33 @@ Public Class Form1
         RichTextBox1.Focus()
         RichTextBox1.SelectionStart = istart - 1
         RichTextBox1.SelectionLength = ilen
+    End Sub
+
+    Private Sub LicenzaToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles LicenzaToolStripMenuItem.Click
+        Licenza.Show()
+    End Sub
+
+    Private Sub AboutToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem2.Click
+        About.Show()
+    End Sub
+
+    Private Sub InviaUnFeedbackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles InviaUnFeedbackToolStripMenuItem.Click
+        Dim url As String = "mailto:cttynul@gmail.com"
+        Process.Start(url)
+    End Sub
+
+    Private Sub HelpToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HelpToolStripMenuItem.Click
+        RichTextBox1.Text = "Programma bloccato, reinserisci la password per decriptare le informazioni"
+        Cerca.Enabled = False
+        Precedente.Enabled = False
+        Successivo.Enabled = False
+        CercaTesto.ReadOnly = True
+        BloccaProfilo.Enabled = False
+        Button1.Enabled = True
+
+        Label1.Visible = True
+        TextBox1.Visible = True
+        Button1.Visible = True
+        HelpToolStripMenuItem.Enabled = False
     End Sub
 End Class
